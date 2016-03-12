@@ -1,3 +1,5 @@
+/* This code is written  by Ramaranjan Ruj
+in December'15 to practice Algorithms in Java */
 
 public class Selection_Sort{
 	public static void main(String[] args){
@@ -9,18 +11,18 @@ public class Selection_Sort{
 		Selection selection = new Selection();
 		selection.selsort(numbers);
 	}
-	
+
 
 }
 
 
 class Selection{
-	
+
 	public void selsort(int[] a){
-		
+
 		int min;
 		int loc = 0;
-		
+
 		for(int i=0; i<a.length; i++){
 			min = a[i];
 			for(int j=i+1; j<a.length; j++){
@@ -32,13 +34,13 @@ class Selection{
 				if(a[i] > min){
 					int temp = a[i];
 					a[i] = min;
-					a[loc] = temp; 
+					a[loc] = temp;
 				}
 			}
-		
+
 		for(int elements:a){
 			System.out.printf("%d ", elements);
-			
+
 		}
 		}
 }
